@@ -1,10 +1,9 @@
 <template>
   <navbar
     :pages="pages"
-    active-page="0"
+    :active-page="activePage"
     :nav-link-click="(index) => (activePage = index)"
-  >
-  </navbar>
+  ></navbar>
 
   <page-viewer :page="pages[activePage]"></page-viewer>
 </template>
